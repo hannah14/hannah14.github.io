@@ -8,16 +8,15 @@ p    {color:green;}
 h1   {font-size: 500%;}
 </style>
 
+
 <script>
-            function changeImage() {
-                //changes images when clicked, keep clicking!
-                var image = document.getElementById('myImage');
-                if (image.alt.match("Cheese Pizza")) {
-                    image.src = "http://www.cicis.com/media/1149/pizza_trad_cheese.png";
-                    image.alt = "Pepperoni Pizza";
-                } else if(image.alt.match("Pepperoni Pizza")){
-                    image.src = "http://www.cicis.com/media/1138/pizza_trad_pepperoni.png";
-                    image.alt = "Cheese Pizza";
-                }
-            }
-</script> 
+function changeImage() {
+    var image = document.getElementById('myImage');
+    if (image.src.match("bulbon")) {
+        image.src = "http://www.cicis.com/media/1138/pizza_trad_pepperoni.png";
+    } else {
+        image.src = "http://www.cicis.com/media/1138/pizza_trad_pepperoni.png";
+    }
+}
+</script>
+
