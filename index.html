@@ -5,6 +5,19 @@
 <style>
 h1   {color:lightcyan;}
 p    {color:green;}
-h1   {font-size: 250%;}
+h1   {font-size: 300%;}
 </style>
-http://www.cicis.com/media/1138/pizza_trad_pepperoni.png
+
+<script>
+            function changeImage() {
+                //changes images when clicked, keep clicking!
+                var image = document.getElementById('myImage');
+                if (image.alt.match("Cheese Pizza")) {
+                    image.src = "http://www.cicis.com/media/1149/pizza_trad_cheese.png";
+                    image.alt = "Pepperoni Pizza";
+                } else if(image.alt.match("Pepperoni Pizza")){
+                    image.src = "http://www.cicis.com/media/1138/pizza_trad_pepperoni.png";
+                    image.alt = "Cheese Pizza";
+                }
+            }
+</script> 
