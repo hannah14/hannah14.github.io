@@ -1,7 +1,10 @@
+<!DOCTYPE html>
+<html>
+<body>
 <title> WELCOME </title>
 <body style="background-color:plum;">
 <h1> Food </h1>
-<img src="http://www.cicis.com/media/1149/pizza_trad_cheese.png" alt="Cheese Pizza" style="width:610px;height:534px;">
+<img id="myImage" onclick="changeImage()" src="http://www.cicis.com/media/1149/pizza_trad_cheese.png" width="610" height="534">
 <style>
 h1   {color:lightcyan;}
 p    {color:green;}
@@ -11,7 +14,7 @@ h1   {font-size: 500%;}
 
 <script>
 function changeImage() {
-    var image = document.getElementById("Cheese Pizza");
+    var image = document.getElementById('myImage';
     if (image.src.match("Cheese Pizza")) {
         image.src = "http://www.cicis.com/media/1149/pizza_trad_cheese.png";
     } else {
@@ -19,3 +22,6 @@ function changeImage() {
     }
 }
 </script>
+
+</body>
+</html>
